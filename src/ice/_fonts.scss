@@ -21,6 +21,8 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  cursor: pointer;
 }
 
 .icon_only{
@@ -44,4 +46,7 @@
 }
 .icon-twitter:before {
   content: "\e911";
+}
+.icon-close:before {
+  content: "\ea0f";
 }

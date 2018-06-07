@@ -10,11 +10,6 @@ const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 const OptimizeCSSAssets = require("optimize-css-assets-webpack-plugin");
 new OptimizeCSSAssets();
 
-// to minify JS
-/*
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
-new UglifyJSPlugin();
-*/
 
 
 var nodePath = path.resolve(__dirname, 'node_modules');

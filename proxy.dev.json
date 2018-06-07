@@ -8,6 +8,7 @@
     "*.php",
     "*.html",
     "public/*.js",
-    "public/*.css"
+    "public/*.css",
+    "public/*.php"
     ]
 }

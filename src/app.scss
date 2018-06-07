@@ -17,7 +17,7 @@ body {
 
 header{
   background-color: white;
-  min-height: rem-calc(200);
+   min-height: rem-calc(120);
 }
 
 /*
@@ -33,6 +33,7 @@ header{
 @include foundation-range-input;
 @include foundation-callout;
 @include foundation-close-button;
+
 @include foundation-menu;
 @include foundation-menu-icon;
 @include foundation-drilldown-menu;
@@ -48,6 +49,7 @@ header{
 @include foundation-tooltip;
 @include foundation-visibility-classes;
 @include foundation-flex-classes;
+
 
 /* Surcharge de la grille xy-grid */
 @import 'ice/xy-grid';
