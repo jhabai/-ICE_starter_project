@@ -12,12 +12,13 @@ new OptimizeCSSAssets();
 
 
 
+
 var nodePath = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
     entry: { main: './src/index.js' },
     output: {
-        path: path.resolve(__dirname, './public'),
+        path: path.resolve(__dirname, './public/assets'),
         filename: 'bundle.js'
     },
     module: {

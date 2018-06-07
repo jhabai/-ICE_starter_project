@@ -7,16 +7,16 @@
 $midnight-blue : blue;
 
 body {
-  background-color: $midnight-blue;
+
   transition: all 1s;
 
   &:hover{
-    background: blue;
+    background: lighten($body-background, 30);
   }
 }
 
 header{
-  background-color: white;
+  background-color: darken($body-background, 30);
    min-height: rem-calc(120);
 }
 

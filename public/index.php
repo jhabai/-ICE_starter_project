@@ -5,7 +5,7 @@
     <title>Modele</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="/public/app.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/app.css">
 </head>
 <body>
 <?php
@@ -70,6 +70,6 @@ include('off-canvas-wrapper.php');
     </main>
 </div>
 
-<script src="bundle.js"></script>
+<script src="/public/assets/bundle.js"></script>
 </body>
 </html>
