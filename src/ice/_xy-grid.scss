@@ -1,0 +1,80 @@
+/* ===========================================================================
+   XY grid
+   =========================================================================== */
+
+
+@include foundation-xy-grid-classes(
+  /* options
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: true,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: true,
+  $frame-grid: true
+  */
+);
+
+
+
+
+
+
+
+/*
+   Function
+   ===================================== */
+
+@function grid-calc($colNumber, $totalColumns) {
+  $result: percentage(($colNumber / $totalColumns));
+  @if $result == 0% { $result: 0; }
+  @return $result;
+}
+
+/*
+   Mixin
+   ===================================== */
+@mixin xy-grid-col($size, $grid-column-count) {
+  @for $j from 1 through $grid-column-count {
+    .grid-x > .#{$size}-#{$j} {
+      width: grid-calc($j, $grid-column-count);
+    }
+  }
+
+  /*
+  Offset
+  ===================================== */
+  @for $i from 0 through $grid-column-count - 1 {
+    .#{$size}-offset-#{$i} {
+      margin-left: grid-calc($i, $grid-column-count) !important;
+    }
+  }
+
+}
+
+/*
+   Breakpoint
+   ===================================== */
+
+@include breakpoint(small) {
+  @include xy-grid-col($size: small, $grid-column-count: $grid-column-count-small);
+}
+
+@include breakpoint(medium) {
+  @include xy-grid-col($size: medium, $grid-column-count: $grid-column-count-medium);
+}
+
+@include breakpoint(large) {
+  @include xy-grid-col($size: large, $grid-column-count: $grid-column-count-large);
+}
+
+
+/* ajout alignement */
+
+.align-right{
+  margin-left: auto;
+}
+.align-left{
+  margin-right: auto;
+}

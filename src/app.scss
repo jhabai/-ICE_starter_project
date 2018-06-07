@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import "../node_modules/foundation-sites/scss/foundation";
+
+@import 'settings';
+
+$midnight-blue : blue;
+
+body {
+  background-color: $midnight-blue;
+  transition: all 1s;
+
+  &:hover{
+    background: blue;
+  }
+}
+
+header{
+  background-color: white;
+  min-height: rem-calc(200);
+}
+
+/*
+   Surcharge Ice Dev
+   ===================================== */
+/**/
+
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-accordion;
+@include foundation-range-input;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-tabs;
+@include foundation-tooltip;
+@include foundation-visibility-classes;
+@include foundation-flex-classes;
+
+/* Surcharge de la grille xy-grid */
+@import 'ice/xy-grid';
+@import 'ice/debug';
+@import 'ice/fonts';

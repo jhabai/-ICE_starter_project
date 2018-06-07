@@ -1,0 +1,13 @@
+{
+    "proxy":  "jh.modele-decoupe.lan/public",
+    "port": 5000,
+    "ui": {
+    "port": 5001
+},
+    "files": [
+    "*.php",
+    "*.html",
+    "public/*.js",
+    "public/*.css"
+    ]
+}
